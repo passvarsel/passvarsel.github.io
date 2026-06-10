@@ -160,6 +160,16 @@
       cursor: pointer;
     }
     .btn-primary:hover { background: var(--navy-mid); transform: translateY(-1px); }
+    .store-badge {
+      display: inline-block;
+      border-radius: 8px;
+      border: 1px solid rgba(15,43,74,0.18);
+      overflow: hidden;
+      transition: opacity 0.15s, transform 0.12s;
+      line-height: 0;
+    }
+    .store-badge:hover { opacity: 0.85; transform: translateY(-1px); }
+
     .btn-ghost {
       font-family: 'Space Grotesk', sans-serif;
       font-weight: 500;
@@ -544,7 +554,29 @@
       <h1>Passtime ledig? Du får vite det først.</h1>
       <p class="hero-lead">Passvarsel overvåker ledige timer hos politiet og sender deg en varsling i det samme en time dukker opp — i din by, på ønsket tid.</p>
       <div class="cta-row">
-        <a href="#varsling" class="btn-primary">Sett opp varsling gratis</a>
+        <a href="https://apps.apple.com" class="store-badge" aria-label="Last ned på App Store">
+          <svg height="44" viewBox="0 0 135 44" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+            <rect width="135" height="44" rx="8" fill="#0F2B4A"/>
+            <text x="50" y="16" font-family="Space Grotesk, sans-serif" font-size="9" fill="rgba(255,255,255,0.65)" text-anchor="middle">Last ned på</text>
+            <text x="50" y="30" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="600" fill="white" text-anchor="middle">App Store</text>
+            <path d="M22 12c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M18 20c-1.1 1.9-1.1 4.2 0 6.1L21.5 32h9L34 26.1c1.1-1.9 1.1-4.2 0-6.1L30.5 14h-7L18 20z" fill="white" opacity="0.9"/>
+            <path d="M26 16l-3 5h6l-3-5z" fill="#0F2B4A"/>
+          </svg>
+        </a>
+        <a href="https://play.google.com" class="store-badge" aria-label="Last ned på Google Play">
+          <svg height="44" viewBox="0 0 148 44" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+            <rect width="148" height="44" rx="8" fill="#0F2B4A"/>
+            <text x="57" y="16" font-family="Space Grotesk, sans-serif" font-size="9" fill="rgba(255,255,255,0.65)" text-anchor="middle">Last ned på</text>
+            <text x="57" y="30" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="600" fill="white" text-anchor="middle">Google Play</text>
+            <polygon points="18,13 18,31 28,22" fill="white" opacity="0.9"/>
+            <polygon points="28,22 18,13 30,16" fill="#E8A020" opacity="0.9"/>
+            <polygon points="28,22 18,31 30,28" fill="#5C7292" opacity="0.9"/>
+            <polygon points="28,22 30,16 30,28" fill="rgba(255,255,255,0.6)"/>
+          </svg>
+        </a>
+      </div>
+      <div style="margin-top: 1.25rem;">
         <a href="#hvordan" class="btn-ghost">Se hvordan det fungerer →</a>
       </div>
     </div>
@@ -676,7 +708,7 @@
         </div>
         <div class="trust-item">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-          Ingen app nødvendig
+          Fungerer på iOS og Android
         </div>
         <div class="trust-item">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -698,7 +730,7 @@
         <a href="#hvordan">Slik fungerer det</a>
         <a href="#faq">Spørsmål</a>
         <a href="mailto:hei@passvarsel.no">Kontakt</a>
-        <a href="#">Personvern</a>
+        <a href="personvern.html">Personvern</a>
       </nav>
     </div>
   </footer>
