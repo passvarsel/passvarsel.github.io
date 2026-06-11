@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="no">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Personvernerklæring – Passvarsel</title>
-  <meta name="description" content="Passvarsel sin personvernerklæring. Les om hvilke opplysninger vi samler inn og hvordan de brukes." />
+  <meta name="description"
+    content="Passvarsel sin personvernerklæring. Les om hvilke opplysninger vi samler inn og hvordan de brukes." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet" />
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     :root {
       --navy: #0F2B4A;
@@ -20,12 +30,14 @@
       --text: #0F2B4A;
       --text-muted: #5C7292;
       --white: #ffffff;
-      --border: rgba(15,43,74,0.12);
+      --border: rgba(15, 43, 74, 0.12);
       --radius: 12px;
       --radius-lg: 20px;
     }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       font-family: 'Inter', sans-serif;
@@ -36,17 +48,23 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; line-height: 1.2; }
+    h1,
+    h2,
+    h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      line-height: 1.2;
+    }
 
     nav {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(247,245,240,0.9);
+      background: rgba(247, 245, 240, 0.9);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
       padding: 0 2rem;
     }
+
     .nav-inner {
       max-width: 1100px;
       margin: 0 auto;
@@ -55,6 +73,7 @@
       align-items: center;
       justify-content: space-between;
     }
+
     .logo {
       font-family: 'Space Grotesk', sans-serif;
       font-weight: 700;
@@ -65,6 +84,7 @@
       align-items: center;
       gap: 8px;
     }
+
     .logo-dot {
       width: 8px;
       height: 8px;
@@ -73,10 +93,21 @@
       display: inline-block;
       animation: pulse 2.4s ease-in-out infinite;
     }
+
     @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.5; transform: scale(0.75); }
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.5;
+        transform: scale(0.75);
+      }
     }
+
     .nav-back {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 14px;
@@ -88,17 +119,22 @@
       gap: 4px;
       transition: color 0.15s;
     }
-    .nav-back:hover { color: var(--navy); }
+
+    .nav-back:hover {
+      color: var(--navy);
+    }
 
     /* HERO STRIP */
     .page-header {
       background: var(--navy);
       padding: 4rem 2rem 3rem;
     }
+
     .page-header-inner {
       max-width: 720px;
       margin: 0 auto;
     }
+
     .page-eyebrow {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 12px;
@@ -108,6 +144,7 @@
       color: var(--amber);
       margin-bottom: 0.75rem;
     }
+
     .page-header h1 {
       font-size: clamp(1.8rem, 3.5vw, 2.6rem);
       font-weight: 700;
@@ -115,9 +152,10 @@
       letter-spacing: -0.02em;
       margin-bottom: 1rem;
     }
+
     .page-header-meta {
       font-size: 14px;
-      color: rgba(255,255,255,0.45);
+      color: rgba(255, 255, 255, 0.45);
       font-family: 'Space Grotesk', sans-serif;
     }
 
@@ -135,12 +173,14 @@
       gap: 1rem;
       margin-bottom: 3rem;
     }
+
     .summary-card {
       background: var(--white);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       padding: 1.25rem;
     }
+
     .summary-icon {
       width: 36px;
       height: 36px;
@@ -152,7 +192,13 @@
       justify-content: center;
       margin-bottom: 0.75rem;
     }
-    .summary-icon svg { width: 18px; height: 18px; stroke: var(--navy); }
+
+    .summary-icon svg {
+      width: 18px;
+      height: 18px;
+      stroke: var(--navy);
+    }
+
     .summary-label {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 13px;
@@ -160,6 +206,7 @@
       color: var(--navy);
       margin-bottom: 3px;
     }
+
     .summary-value {
       font-size: 12px;
       color: var(--text-muted);
@@ -170,6 +217,7 @@
     .prose-section {
       margin-bottom: 2.5rem;
     }
+
     .prose-section h2 {
       font-size: 1.25rem;
       font-weight: 600;
@@ -178,13 +226,17 @@
       padding-bottom: 0.5rem;
       border-bottom: 1px solid var(--border);
     }
+
     .prose-section p {
       font-size: 15px;
       color: #3A4F65;
       line-height: 1.75;
       margin-bottom: 0.85rem;
     }
-    .prose-section p:last-child { margin-bottom: 0; }
+
+    .prose-section p:last-child {
+      margin-bottom: 0;
+    }
 
     .data-table {
       width: 100%;
@@ -195,6 +247,7 @@
       overflow: hidden;
       border: 1px solid var(--border);
     }
+
     .data-table th {
       background: var(--ivory);
       font-family: 'Space Grotesk', sans-serif;
@@ -207,6 +260,7 @@
       text-align: left;
       border-bottom: 1px solid var(--border);
     }
+
     .data-table td {
       padding: 10px 14px;
       color: #3A4F65;
@@ -214,12 +268,18 @@
       border-bottom: 1px solid var(--border);
       vertical-align: top;
     }
-    .data-table tr:last-child td { border-bottom: none; }
-    .data-table tr:nth-child(even) td { background: rgba(247,245,240,0.5); }
+
+    .data-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .data-table tr:nth-child(even) td {
+      background: rgba(247, 245, 240, 0.5);
+    }
 
     .highlight-box {
       background: var(--amber-light);
-      border: 1px solid rgba(232,160,32,0.25);
+      border: 1px solid rgba(232, 160, 32, 0.25);
       border-radius: var(--radius);
       padding: 1.25rem 1.5rem;
       margin: 1rem 0;
@@ -227,6 +287,7 @@
       color: var(--navy);
       line-height: 1.65;
     }
+
     .highlight-box strong {
       font-family: 'Space Grotesk', sans-serif;
       font-weight: 600;
@@ -242,29 +303,38 @@
       gap: 1.5rem;
       align-items: flex-start;
     }
+
     .contact-icon {
       width: 44px;
       height: 44px;
       border-radius: 11px;
-      background: rgba(255,255,255,0.1);
+      background: rgba(255, 255, 255, 0.1);
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
     }
-    .contact-icon svg { width: 22px; height: 22px; stroke: var(--amber); }
+
+    .contact-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke: var(--amber);
+    }
+
     .contact-card h3 {
       font-size: 1rem;
       font-weight: 600;
       color: var(--white);
       margin-bottom: 0.4rem;
     }
+
     .contact-card p {
       font-size: 14px;
-      color: rgba(255,255,255,0.55);
+      color: rgba(255, 255, 255, 0.55);
       line-height: 1.6;
       margin-bottom: 0.75rem;
     }
+
     .contact-card a {
       color: var(--amber);
       text-decoration: none;
@@ -272,13 +342,17 @@
       font-weight: 500;
       font-size: 14px;
     }
-    .contact-card a:hover { text-decoration: underline; }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
 
     footer {
       border-top: 1px solid var(--border);
       padding: 2rem;
       text-align: center;
     }
+
     .footer-inner {
       max-width: 720px;
       margin: 0 auto;
@@ -288,24 +362,49 @@
       flex-wrap: wrap;
       gap: 1rem;
     }
-    .footer-copy { font-size: 13px; color: var(--text-muted); }
-    .footer-links { display: flex; gap: 1.5rem; }
+
+    .footer-copy {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
     .footer-links a {
       font-size: 13px;
       color: var(--text-muted);
       text-decoration: none;
       transition: color 0.15s;
     }
-    .footer-links a:hover { color: var(--navy); }
+
+    .footer-links a:hover {
+      color: var(--navy);
+    }
 
     @media (max-width: 640px) {
-      .summary-grid { grid-template-columns: 1fr; }
-      .contact-card { flex-direction: column; }
-      .footer-inner { justify-content: center; text-align: center; }
-      .footer-links { justify-content: center; }
+      .summary-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card {
+        flex-direction: column;
+      }
+
+      .footer-inner {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .footer-links {
+        justify-content: center;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <nav>
@@ -322,7 +421,8 @@
     <div class="page-header-inner">
       <div class="page-eyebrow">Juridisk</div>
       <h1>Personvernerklæring</h1>
-      <div class="page-header-meta">Sist oppdatert: 10. juni 2025 &nbsp;·&nbsp; Gjelder for iOS- og Android-appen samt nettsiden</div>
+      <div class="page-header-meta">Sist oppdatert: 10. juni 2025 &nbsp;·&nbsp; Gjelder for iOS- og Android-appen samt
+        nettsiden</div>
     </div>
   </div>
 
@@ -331,21 +431,30 @@
     <div class="summary-grid">
       <div class="summary-card">
         <div class="summary-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
         </div>
         <div class="summary-label">Vi selger ikke data</div>
         <div class="summary-value">Opplysningene dine deles aldri med tredjeparter for kommersielle formål.</div>
       </div>
       <div class="summary-card">
         <div class="summary-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12 16 14" />
+          </svg>
         </div>
         <div class="summary-label">Slettes automatisk</div>
-        <div class="summary-value">Personopplysninger slettes automatisk 90 dager etter at varslingen er avsluttet.</div>
+        <div class="summary-value">Personopplysninger slettes automatisk 90 dager etter at varslingen er avsluttet.
+        </div>
       </div>
       <div class="summary-card">
         <div class="summary-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
         </div>
         <div class="summary-label">Du har full kontroll</div>
         <div class="summary-value">Du kan når som helst se, endre eller slette opplysningene vi har om deg.</div>
@@ -354,8 +463,10 @@
 
     <div class="prose-section">
       <h2>1. Hvem er behandlingsansvarlig</h2>
-      <p>Passvarsel er en tjeneste utviklet og driftet som et privat prosjekt. Behandlingsansvarlig for personopplysninger er tjenestens utvikler. Kontaktinformasjon finner du nederst i dette dokumentet.</p>
-      <p>Passvarsel er ikke tilknyttet, eid av eller på annen måte forbundet med Politidirektoratet eller norsk politi.</p>
+      <p>Passvarsel er en tjeneste utviklet og driftet som et privat prosjekt. Behandlingsansvarlig for
+        personopplysninger er tjenestens utvikler. Kontaktinformasjon finner du nederst i dette dokumentet.</p>
+      <p>Passvarsel er ikke tilknyttet, eid av eller på annen måte forbundet med Politidirektoratet eller norsk politi.
+      </p>
     </div>
 
     <div class="prose-section">
@@ -403,23 +514,29 @@
         </tbody>
       </table>
       <div class="highlight-box">
-        <strong>Vi samler ikke inn:</strong> Navn, fødselsnummer, betalingsinformasjon, passopplysninger, GPS-lokasjon eller noen form for biometriske data.
+        <strong>Vi samler ikke inn:</strong> Navn, fødselsnummer, betalingsinformasjon, passopplysninger, GPS-lokasjon
+        eller noen form for biometriske data.
       </div>
     </div>
 
     <div class="prose-section">
       <h2>3. Grunnlag for behandling</h2>
-      <p>Vi behandler opplysningene dine på grunnlag av <strong>avtale</strong> (GDPR art. 6 nr. 1 b) — du oppgir opplysningene for å motta en tjeneste du selv har bedt om. Du kan trekke tilbake samtykket ditt og slette konto når som helst i appens innstillinger eller ved å kontakte oss direkte.</p>
+      <p>Vi behandler opplysningene dine på grunnlag av <strong>avtale</strong> (GDPR art. 6 nr. 1 b) — du oppgir
+        opplysningene for å motta en tjeneste du selv har bedt om. Du kan trekke tilbake samtykket ditt og slette konto
+        når som helst i appens innstillinger eller ved å kontakte oss direkte.</p>
     </div>
 
     <div class="prose-section">
       <h2>4. Slik brukes opplysningene</h2>
-      <p>Opplysningene brukes utelukkende til å overvåke politiets bookingside og sende deg en varsling i det øyeblikket en time som matcher dine preferanser blir tilgjengelig. Vi bruker ikke opplysningene til markedsføring, profilering eller noen form for automatisert beslutningstaking.</p>
+      <p>Opplysningene brukes utelukkende til å overvåke politiets bookingside og sende deg en varsling i det øyeblikket
+        en time som matcher dine preferanser blir tilgjengelig. Vi bruker ikke opplysningene til markedsføring,
+        profilering eller noen form for automatisert beslutningstaking.</p>
     </div>
 
     <div class="prose-section">
       <h2>5. Deling med tredjeparter</h2>
-      <p>Vi deler ikke personopplysninger med tredjeparter for kommersielle formål. Opplysningene kan deles med følgende kategorier av underleverandører, utelukkende for teknisk drift:</p>
+      <p>Vi deler ikke personopplysninger med tredjeparter for kommersielle formål. Opplysningene kan deles med følgende
+        kategorier av underleverandører, utelukkende for teknisk drift:</p>
       <table class="data-table">
         <thead>
           <tr>
@@ -447,13 +564,17 @@
 
     <div class="prose-section">
       <h2>6. Push-varsler i appen</h2>
-      <p>Når du installerer Passvarsel-appen på iOS eller Android, ber appen om tillatelse til å sende deg push-varsler. Dette er nødvendig for at varslingen skal fungere. Du kan når som helst trekke tilbake denne tillatelsen i enhetens innstillinger — da deaktiveres push-varsler, men du kan fortsatt motta varsler på e-post eller SMS.</p>
-      <p>Apple og Google (via henholdsvis APNs og FCM) er tekniske mellomledd for push-levering. Se Apples og Googles egne personvernerklæringer for informasjon om hvordan de behandler data knyttet til push-varsler.</p>
+      <p>Når du installerer Passvarsel-appen på iOS eller Android, ber appen om tillatelse til å sende deg push-varsler.
+        Dette er nødvendig for at varslingen skal fungere. Du kan når som helst trekke tilbake denne tillatelsen i
+        enhetens innstillinger — da deaktiveres push-varsler, men du kan fortsatt motta varsler på e-post eller SMS.</p>
+      <p>Apple og Google (via henholdsvis APNs og FCM) er tekniske mellomledd for push-levering. Se Apples og Googles
+        egne personvernerklæringer for informasjon om hvordan de behandler data knyttet til push-varsler.</p>
     </div>
 
     <div class="prose-section">
       <h2>7. Sikkerhet</h2>
-      <p>All kommunikasjon mellom appen / nettsiden og våre servere krypteres med TLS. Opplysningene lagres på servere i Europa og er beskyttet med tilgangskontroll og logging. Vi gjennomfører jevnlige sikkerhetsvurderinger.</p>
+      <p>All kommunikasjon mellom appen / nettsiden og våre servere krypteres med TLS. Opplysningene lagres på servere i
+        Europa og er beskyttet med tilgangskontroll og logging. Vi gjennomfører jevnlige sikkerhetsvurderinger.</p>
     </div>
 
     <div class="prose-section">
@@ -483,31 +604,42 @@
           </tr>
           <tr>
             <td style="font-family: 'Space Grotesk', sans-serif; font-weight: 600;">Klage</td>
-            <td>Klage til <a href="https://www.datatilsynet.no" style="color: var(--navy);">Datatilsynet</a> dersom du mener vi behandler opplysningene ulovlig</td>
+            <td>Klage til <a href="https://www.datatilsynet.no" style="color: var(--navy);">Datatilsynet</a> dersom du
+              mener vi behandler opplysningene ulovlig</td>
           </tr>
         </tbody>
       </table>
-      <p style="margin-top: 0.85rem;">For å bruke noen av disse rettighetene, send oss en e-post (se kontaktinfo nedenfor). Vi svarer innen 30 dager.</p>
+      <p style="margin-top: 0.85rem;">For å bruke noen av disse rettighetene, send oss en e-post (se kontaktinfo
+        nedenfor). Vi svarer innen 30 dager.</p>
     </div>
 
     <div class="prose-section">
       <h2>9. Informasjonskapsler (cookies)</h2>
-      <p>Nettsiden bruker ingen sporingscookies eller reklamecookies. Vi kan bruke én teknisk sesjons-cookie for å huske dine varslingsinnstillinger mens du konfigurerer tjenesten. Denne slettes automatisk når du lukker nettleseren.</p>
-      <p>Appen bruker ingen cookies. Innstillinger lagres lokalt på enheten din eller i vår database koblet til kontoen din.</p>
+      <p>Nettsiden bruker ingen sporingscookies eller reklamecookies. Vi kan bruke én teknisk sesjons-cookie for å huske
+        dine varslingsinnstillinger mens du konfigurerer tjenesten. Denne slettes automatisk når du lukker nettleseren.
+      </p>
+      <p>Appen bruker ingen cookies. Innstillinger lagres lokalt på enheten din eller i vår database koblet til kontoen
+        din.</p>
     </div>
 
     <div class="prose-section">
       <h2>10. Endringer i denne erklæringen</h2>
-      <p>Vi kan oppdatere denne personvernerklæringen ved behov. Vesentlige endringer varsles via e-post eller en tydelig melding i appen minst 14 dager før de trer i kraft. Datoen øverst på siden viser når erklæringen sist ble oppdatert.</p>
+      <p>Vi kan oppdatere denne personvernerklæringen ved behov. Vesentlige endringer varsles via e-post eller en
+        tydelig melding i appen minst 14 dager før de trer i kraft. Datoen øverst på siden viser når erklæringen sist
+        ble oppdatert.</p>
     </div>
 
     <div class="contact-card">
       <div class="contact-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+          <polyline points="22,6 12,13 2,6" />
+        </svg>
       </div>
       <div>
         <h3>Kontakt oss om personvern</h3>
-        <p>Har du spørsmål om hvordan vi behandler opplysningene dine, eller ønsker du å benytte deg av rettighetene dine? Ta kontakt — vi svarer innen 30 dager.</p>
+        <p>Har du spørsmål om hvordan vi behandler opplysningene dine, eller ønsker du å benytte deg av rettighetene
+          dine? Ta kontakt — vi svarer innen 30 dager.</p>
         <a href="mailto:personvern@passvarsel.no">personvern@passvarsel.no</a>
       </div>
     </div>
@@ -517,7 +649,8 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-copy">
-        <a href="index.html" class="logo" style="justify-content: flex-start; margin-bottom: 4px; text-decoration:none;">
+        <a href="index.html" class="logo"
+          style="justify-content: flex-start; margin-bottom: 4px; text-decoration:none;">
           <span class="logo-dot"></span>Passvarsel
         </a>
         <span style="font-size:12px; display:block;">Laget med frustrasjon og kaffe. Ikke tilknyttet politiet.</span>
@@ -532,4 +665,5 @@
   </footer>
 
 </body>
+
 </html>
