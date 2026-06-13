@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personvernerklæring – Passvarsel</title>
-  <meta name="description" content="Passvarsel sin personvernerklæring. Les om hvilke opplysninger vi samler inn og hvordan de brukes." />
+  <title>Vilkår for bruk – Passvarsel</title>
+  <meta name="description" content="Passvarsel sine vilkår for bruk. Les om reglene for å bruke appen og tjenesten." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
@@ -90,7 +90,6 @@
     }
     .nav-back:hover { color: var(--navy); }
 
-    /* HERO STRIP */
     .page-header {
       background: var(--navy);
       padding: 4rem 2rem 3rem;
@@ -121,14 +120,12 @@
       font-family: 'Space Grotesk', sans-serif;
     }
 
-    /* CONTENT */
     .content-wrap {
       max-width: 720px;
       margin: 0 auto;
       padding: 3.5rem 2rem 5rem;
     }
 
-    /* SUMMARY CARDS */
     .summary-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -166,7 +163,6 @@
       line-height: 1.4;
     }
 
-    /* PROSE */
     .prose-section {
       margin-bottom: 2.5rem;
     }
@@ -186,36 +182,13 @@
     }
     .prose-section p:last-child { margin-bottom: 0; }
 
-    .data-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 14px;
-      margin: 1rem 0 0.5rem;
-      border-radius: var(--radius);
-      overflow: hidden;
-      border: 1px solid var(--border);
-    }
-    .data-table th {
-      background: var(--ivory);
-      font-family: 'Space Grotesk', sans-serif;
-      font-weight: 600;
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--text-muted);
-      padding: 10px 14px;
-      text-align: left;
-      border-bottom: 1px solid var(--border);
-    }
-    .data-table td {
-      padding: 10px 14px;
+    .prose-section ul {
+      margin: 0.5rem 0 0.85rem 1.25rem;
       color: #3A4F65;
-      line-height: 1.5;
-      border-bottom: 1px solid var(--border);
-      vertical-align: top;
+      font-size: 15px;
+      line-height: 1.75;
     }
-    .data-table tr:last-child td { border-bottom: none; }
-    .data-table tr:nth-child(even) td { background: rgba(247,245,240,0.5); }
+    .prose-section ul li { margin-bottom: 0.3rem; }
 
     .highlight-box {
       background: var(--amber-light);
@@ -232,7 +205,6 @@
       font-weight: 600;
     }
 
-    /* CONTACT */
     .contact-card {
       background: var(--navy);
       border-radius: var(--radius-lg);
@@ -277,7 +249,6 @@
     footer {
       border-top: 1px solid var(--border);
       padding: 2rem;
-      text-align: center;
     }
     .footer-inner {
       max-width: 720px;
@@ -321,7 +292,7 @@
   <div class="page-header">
     <div class="page-header-inner">
       <div class="page-eyebrow">Juridisk</div>
-      <h1>Personvernerklæring</h1>
+      <h1>Vilkår for bruk</h1>
       <div class="page-header-meta">Sist oppdatert: 10. juni 2025 &nbsp;·&nbsp; Gjelder for iOS- og Android-appen samt nettsiden</div>
     </div>
   </div>
@@ -333,172 +304,107 @@
         <div class="summary-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <div class="summary-label">Vi selger ikke data</div>
-        <div class="summary-value">Opplysningene dine deles aldri med tredjeparter for kommersielle formål.</div>
+        <div class="summary-label">Gratis tjeneste</div>
+        <div class="summary-value">Passvarsel er gratis å bruke og krever ingen betaling.</div>
       </div>
       <div class="summary-card">
         <div class="summary-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
         </div>
-        <div class="summary-label">Slettes automatisk</div>
-        <div class="summary-value">Personopplysninger slettes automatisk 90 dager etter at varslingen er avsluttet.</div>
+        <div class="summary-label">Ikke offisiell</div>
+        <div class="summary-value">Passvarsel er ikke tilknyttet politiet eller norske myndigheter.</div>
       </div>
       <div class="summary-card">
         <div class="summary-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
         </div>
-        <div class="summary-label">Du har full kontroll</div>
-        <div class="summary-value">Du kan når som helst se, endre eller slette opplysningene vi har om deg.</div>
+        <div class="summary-label">Kun varsling</div>
+        <div class="summary-value">Vi booker ikke timer for deg — vi varsler deg bare om ledige tider.</div>
       </div>
     </div>
 
-    <div class="prose-section">
-      <h2>1. Hvem er behandlingsansvarlig</h2>
-      <p>Passvarsel er en tjeneste utviklet og driftet som et privat prosjekt. Behandlingsansvarlig for personopplysninger er tjenestens utvikler. Kontaktinformasjon finner du nederst i dette dokumentet.</p>
-      <p>Passvarsel er ikke tilknyttet, eid av eller på annen måte forbundet med Politidirektoratet eller norsk politi.</p>
+    <div class="highlight-box">
+      <strong>Les dette før du bruker Passvarsel.</strong> Ved å laste ned appen eller bruke tjenesten godtar du disse vilkårene. Hvis du ikke godtar vilkårene, ber vi deg om å ikke bruke tjenesten.
     </div>
 
     <div class="prose-section">
-      <h2>2. Hva vi samler inn</h2>
-      <p>Vi samler kun inn det som er strengt nødvendig for at tjenesten skal fungere.</p>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Opplysning</th>
-            <th>Formål</th>
-            <th>Lagringstid</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>E-postadresse</td>
-            <td>Sende varsling når ledig time er funnet</td>
-            <td>90 dager etter avsluttet varsling</td>
-          </tr>
-          <tr>
-            <td>Telefonnummer (valgfritt)</td>
-            <td>SMS-varsling dersom du velger dette</td>
-            <td>90 dager etter avsluttet varsling</td>
-          </tr>
-          <tr>
-            <td>Ønsket by / politistasjon</td>
-            <td>Filtrere søkeresultater riktig</td>
-            <td>90 dager etter avsluttet varsling</td>
-          </tr>
-          <tr>
-            <td>Ønskede dager og tidspunkter</td>
-            <td>Matche varsling mot dine preferanser</td>
-            <td>90 dager etter avsluttet varsling</td>
-          </tr>
-          <tr>
-            <td>Enhetsinformasjon (app)</td>
-            <td>Sende push-varsler til riktig enhet</td>
-            <td>90 dager etter avsluttet varsling</td>
-          </tr>
-          <tr>
-            <td>Tekniske logger</td>
-            <td>Feilsøking og driftsstabilitet</td>
-            <td>30 dager</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="highlight-box">
-        <strong>Vi samler ikke inn:</strong> Navn, fødselsnummer, betalingsinformasjon, passopplysninger, GPS-lokasjon eller noen form for biometriske data.
-      </div>
+      <h2>1. Om tjenesten</h2>
+      <p>Passvarsel er en uavhengig varslings­tjeneste som overvåker tilgjengelige passtimer hos norsk politi og sender deg en melding når en ledig time som matcher dine preferanser dukker opp. Tjenesten er tilgjengelig som iOS-app, Android-app og via nettsiden.</p>
+      <p>Passvarsel er ikke tilknyttet, godkjent av eller på annen måte forbundet med Politidirektoratet, norsk politi eller andre offentlige myndigheter. All bookingfunksjonalitet skjer direkte på politiets egne nettsider.</p>
     </div>
 
     <div class="prose-section">
-      <h2>3. Grunnlag for behandling</h2>
-      <p>Vi behandler opplysningene dine på grunnlag av <strong>avtale</strong> (GDPR art. 6 nr. 1 b) — du oppgir opplysningene for å motta en tjeneste du selv har bedt om. Du kan trekke tilbake samtykket ditt og slette konto når som helst i appens innstillinger eller ved å kontakte oss direkte.</p>
+      <h2>2. Hvem kan bruke tjenesten</h2>
+      <p>Passvarsel kan brukes av alle som har behov for å bestille en passtime i Norge. Du bekrefter at du:</p>
+      <ul>
+        <li>er minst 16 år gammel, eller har samtykke fra foresatte</li>
+        <li>oppgir korrekte kontaktopplysninger</li>
+        <li>bruker tjenesten kun til lovlige formål</li>
+        <li>ikke bruker tjenesten på vegne av andre uten deres kunnskap</li>
+      </ul>
     </div>
 
     <div class="prose-section">
-      <h2>4. Slik brukes opplysningene</h2>
-      <p>Opplysningene brukes utelukkende til å overvåke politiets bookingside og sende deg en varsling i det øyeblikket en time som matcher dine preferanser blir tilgjengelig. Vi bruker ikke opplysningene til markedsføring, profilering eller noen form for automatisert beslutningstaking.</p>
+      <h2>3. Hva tjenesten gjør — og ikke gjør</h2>
+      <p>Passvarsel <strong>varsler</strong> deg om ledige passtimer. Vi:</p>
+      <ul>
+        <li>booker ikke timer på dine vegne</li>
+        <li>garanterer ikke at en ledig time fortsatt er tilgjengelig når du klikker på lenken</li>
+        <li>har ingen innflytelse på politiets bookingsystem, kapasitet eller åpningstider</li>
+        <li>er ikke ansvarlige for feil eller endringer i politiets bookingplattform</li>
+      </ul>
+      <p>Tidsvinduet mellom at vi oppdager en ledig time og sender varslingen kan variere. Det er ingen garanti for at du rekker å booke timen.</p>
     </div>
 
     <div class="prose-section">
-      <h2>5. Deling med tredjeparter</h2>
-      <p>Vi deler ikke personopplysninger med tredjeparter for kommersielle formål. Opplysningene kan deles med følgende kategorier av underleverandører, utelukkende for teknisk drift:</p>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Kategori</th>
-            <th>Formål</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Skyleverandør (serverinfrastruktur)</td>
-            <td>Lagring og kjøring av tjenesten</td>
-          </tr>
-          <tr>
-            <td>E-post / SMS-tjeneste</td>
-            <td>Utsending av varsler</td>
-          </tr>
-          <tr>
-            <td>Push-varseltjeneste (Apple APNs / Google FCM)</td>
-            <td>Levering av push-varsler til appen din</td>
-          </tr>
-        </tbody>
-      </table>
-      <p>Alle underleverandører er bundet av databehandleravtaler og behandler kun opplysningene på vegne av oss.</p>
+      <h2>4. Brukerens ansvar</h2>
+      <p>Du er selv ansvarlig for å:</p>
+      <ul>
+        <li>sørge for at kontaktopplysningene du oppgir er riktige og oppdaterte</li>
+        <li>fullføre bestillingen av time direkte hos politiet</li>
+        <li>møte opp til bestilt time i henhold til politiets vilkår</li>
+        <li>ikke misbruke tjenesten til å generere unødvendig trafikk mot politiets systemer</li>
+      </ul>
     </div>
 
     <div class="prose-section">
-      <h2>6. Push-varsler i appen</h2>
-      <p>Når du installerer Passvarsel-appen på iOS eller Android, ber appen om tillatelse til å sende deg push-varsler. Dette er nødvendig for at varslingen skal fungere. Du kan når som helst trekke tilbake denne tillatelsen i enhetens innstillinger — da deaktiveres push-varsler, men du kan fortsatt motta varsler på e-post eller SMS.</p>
-      <p>Apple og Google (via henholdsvis APNs og FCM) er tekniske mellomledd for push-levering. Se Apples og Googles egne personvernerklæringer for informasjon om hvordan de behandler data knyttet til push-varsler.</p>
+      <h2>5. Tilgjengelighet og driftsstabilitet</h2>
+      <p>Vi tilstreber at tjenesten er tilgjengelig døgnet rundt, men kan ikke garantere dette. Driftsavbrudd kan forekomme som følge av vedlikehold, tekniske feil eller endringer i politiets bookingsystem.</p>
+      <p>Vi forbeholder oss retten til å endre, pause eller avslutte tjenesten uten forvarsel. Vi vil gjøre vårt beste for å varsle brukere i god tid ved planlagte endringer.</p>
     </div>
 
     <div class="prose-section">
-      <h2>7. Sikkerhet</h2>
-      <p>All kommunikasjon mellom appen / nettsiden og våre servere krypteres med TLS. Opplysningene lagres på servere i Europa og er beskyttet med tilgangskontroll og logging. Vi gjennomfører jevnlige sikkerhetsvurderinger.</p>
+      <h2>6. Immaterielle rettigheter</h2>
+      <p>Alt innhold i Passvarsel-appen og på nettsiden — inkludert design, tekst, logo og kode — tilhører Passvarsel og er beskyttet av opphavsrett. Du gis en begrenset, ikke-eksklusiv rett til å bruke tjenesten til personlig, ikke-kommersiell bruk.</p>
+      <p>Du kan ikke kopiere, selge, lisensiere eller på annen måte distribuere tjenesten eller deler av den uten skriftlig tillatelse.</p>
     </div>
 
     <div class="prose-section">
-      <h2>8. Dine rettigheter</h2>
-      <p>Etter personvernforordningen (GDPR) har du rett til å:</p>
-      <table class="data-table">
-        <tbody>
-          <tr>
-            <td style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; width: 40%;">Innsyn</td>
-            <td>Se hvilke opplysninger vi har lagret om deg</td>
-          </tr>
-          <tr>
-            <td style="font-family: 'Space Grotesk', sans-serif; font-weight: 600;">Retting</td>
-            <td>Korrigere uriktige opplysninger</td>
-          </tr>
-          <tr>
-            <td style="font-family: 'Space Grotesk', sans-serif; font-weight: 600;">Sletting</td>
-            <td>Be om at opplysninger slettes («retten til å bli glemt»)</td>
-          </tr>
-          <tr>
-            <td style="font-family: 'Space Grotesk', sans-serif; font-weight: 600;">Begrensning</td>
-            <td>Be om at behandlingen begrenses i visse situasjoner</td>
-          </tr>
-          <tr>
-            <td style="font-family: 'Space Grotesk', sans-serif; font-weight: 600;">Dataportabilitet</td>
-            <td>Motta opplysningene dine i et maskinlesbart format</td>
-          </tr>
-          <tr>
-            <td style="font-family: 'Space Grotesk', sans-serif; font-weight: 600;">Klage</td>
-            <td>Klage til <a href="https://www.datatilsynet.no" style="color: var(--navy);">Datatilsynet</a> dersom du mener vi behandler opplysningene ulovlig</td>
-          </tr>
-        </tbody>
-      </table>
-      <p style="margin-top: 0.85rem;">For å bruke noen av disse rettighetene, send oss en e-post (se kontaktinfo nedenfor). Vi svarer innen 30 dager.</p>
+      <h2>7. Ansvarsfraskrivelse</h2>
+      <p>Passvarsel tilbys «som den er» uten noen form for garanti. I den grad loven tillater det, fraskriver vi oss ansvar for:</p>
+      <ul>
+        <li>tapte timer eller andre konsekvenser av forsinket eller manglende varsling</li>
+        <li>feil, unøyaktigheter eller avbrudd i tjenesten</li>
+        <li>endringer i politiets bookingsystem som påvirker tjenestens funksjonalitet</li>
+        <li>indirekte tap, tap av data eller tap av inntekt</li>
+      </ul>
+      <p>Vårt samlede ansvar overfor en enkelt bruker er under enhver omstendighet begrenset til NOK 0, ettersom tjenesten er gratis.</p>
     </div>
 
     <div class="prose-section">
-      <h2>9. Informasjonskapsler (cookies)</h2>
-      <p>Nettsiden bruker ingen sporingscookies eller reklamecookies. Vi kan bruke én teknisk sesjons-cookie for å huske dine varslingsinnstillinger mens du konfigurerer tjenesten. Denne slettes automatisk når du lukker nettleseren.</p>
-      <p>Appen bruker ingen cookies. Innstillinger lagres lokalt på enheten din eller i vår database koblet til kontoen din.</p>
+      <h2>8. Endringer i vilkårene</h2>
+      <p>Vi kan oppdatere disse vilkårene ved behov. Vesentlige endringer varsles via e-post eller en tydelig melding i appen minst 14 dager før de trer i kraft. Fortsatt bruk av tjenesten etter at endringene har trådt i kraft regnes som aksept av de nye vilkårene.</p>
     </div>
 
     <div class="prose-section">
-      <h2>10. Endringer i denne erklæringen</h2>
-      <p>Vi kan oppdatere denne personvernerklæringen ved behov. Vesentlige endringer varsles via e-post eller en tydelig melding i appen minst 14 dager før de trer i kraft. Datoen øverst på siden viser når erklæringen sist ble oppdatert.</p>
+      <h2>9. Gjeldende lov og verneting</h2>
+      <p>Disse vilkårene er underlagt norsk rett. Eventuelle tvister skal søkes løst i minnelighet. Dersom dette ikke lykkes, er Oslo tingrett rett verneting.</p>
+    </div>
+
+    <div class="prose-section">
+      <h2>10. App Store og Google Play</h2>
+      <p>Passvarsel-appen er distribuert gjennom Apple App Store og Google Play. Apple Inc. og Google LLC er ikke part i disse vilkårene og har ingen forpliktelser overfor deg som bruker av Passvarsel. Eventuelle krav knyttet til appen rettes til Passvarsel, ikke til Apple eller Google.</p>
+      <p>For iOS-appen gjelder i tillegg Apples standardvilkår for tredjepartsapper («Licensed Application End User License Agreement»).</p>
     </div>
 
     <div class="contact-card">
@@ -506,8 +412,8 @@
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
       </div>
       <div>
-        <h3>Kontakt oss om personvern</h3>
-        <p>Har du spørsmål om hvordan vi behandler opplysningene dine, eller ønsker du å benytte deg av rettighetene dine? Ta kontakt — vi svarer innen 30 dager.</p>
+        <h3>Spørsmål om vilkårene?</h3>
+        <p>Ta gjerne kontakt dersom du lurer på noe om disse vilkårene eller tjenesten generelt.</p>
         <a href="mailto:shervin.koushan.dev@gmail.com">shervin.koushan.dev@gmail.com</a>
       </div>
     </div>
