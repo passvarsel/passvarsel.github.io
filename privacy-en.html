@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy - Passvarsel</title>
   <meta name="description" content="Passvarsel privacy policy. We do not collect personal data." />
+  <link rel="icon" type="image/png" href="ChatGPT%20Image%20Jun%207%2C%202026%2C%2003_45_56%20PM.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
@@ -89,6 +90,34 @@
       transition: color 0.15s;
     }
     .nav-back:hover { color: var(--navy); }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .lang-switch {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--white);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: border-color 0.15s, transform 0.12s;
+    }
+    .lang-flag {
+      width: 20px;
+      height: 14px;
+      border-radius: 2px;
+      box-shadow: 0 0 0 1px rgba(15,43,74,0.08);
+      display: block;
+    }
+    .lang-switch:hover {
+      border-color: var(--text-muted);
+      transform: translateY(-1px);
+    }
 
     /* HERO STRIP */
     .page-header {
@@ -314,7 +343,12 @@
         <span class="logo-dot"></span>
         Passvarsel
       </a>
-      <a href="index-en.html" class="nav-back"><- Back to homepage</a>
+      <div class="nav-right">
+        <a href="personvern.html" class="lang-switch" aria-label="Change language">
+          <img class="lang-flag" src="https://flagcdn.com/w40/gb.png" alt="United Kingdom flag" />
+        </a>
+        <a href="index-en.html" class="nav-back"><- Back to homepage</a>
+      </div>
     </div>
   </nav>
 
@@ -464,7 +498,6 @@
         <a href="mailto:shervin.koushan.dev@gmail.com">Contact</a>
         <a href="privacy-en.html">Privacy</a>
         <a href="terms-en.html">Terms</a>
-        <a href="personvern.html">Norsk</a>
       </nav>
     </div>
   </footer>
